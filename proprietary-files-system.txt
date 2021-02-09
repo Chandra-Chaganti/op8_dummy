@@ -142,7 +142,6 @@
 -system_ext/overlay/CommonOverlay-OpWifiResource.apk
 -system_ext/overlay/CommonOverlay-framework-res.apk
 -system_ext/overlay/CommonOverlay-oneplus-framework-res.apk
--system_ext/priv-app/CameraPicProcService/CameraPicProcService.apk
 -system_ext/priv-app/CarrierConfig/CarrierConfig.apk
 -system_ext/priv-app/Dialer/Dialer.apk
 -system_ext/priv-app/EmergencyInfo_O2/EmergencyInfo_O2.apk
@@ -150,8 +149,10 @@
 -system_ext/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk
 -system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk
 -system_ext/priv-app/IFAAService/IFAAService.apk
+-system_ext/priv-app/OPAccessoryFramework/OPAccessoryFramework.apk
 -system_ext/priv-app/OPAppCategoryProvider/OPAppCategoryProvider.apk
 -system_ext/priv-app/OPAppLocker/OPAppLocker.apk
+-system_ext/priv-app/OPChargingPillar/OPChargingPillar.apk
 -system_ext/priv-app/OPContacts/OPContacts.apk
 -system_ext/priv-app/OPCoreService/OPCoreService.apk
 -system_ext/priv-app/OPDeviceManager/OPDeviceManager.apk
@@ -162,6 +163,8 @@
 -system_ext/priv-app/OPNetworkSetting/OPNetworkSetting.apk
 -system_ext/priv-app/OPOmm/OPOmm.apk
 -system_ext/priv-app/OPSystemUI/OPSystemUI.apk
+-system_ext/priv-app/OPWorkLifeBalance/OPWorkLifeBalance.apk
+-system_ext/priv-app/OnePlusCamera/OnePlusCamera.apk
 -system_ext/priv-app/OnePlusGallery/OnePlusGallery.apk
 -system_ext/priv-app/OpLogkit/OpLogkit.apk
 -system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
@@ -170,6 +173,7 @@
 -system_ext/priv-app/SettingsIntelligence/SettingsIntelligence.apk
 -system_ext/priv-app/SetupWizard/SetupWizard.apk
 -system_ext/priv-app/StorageManager/StorageManager.apk
+-system_ext/priv-app/TagGoogle/TagGoogle.apk
 -system_ext/priv-app/WallpaperCropper/WallpaperCropper.apk
 -system_ext/priv-app/WfdService/WfdService.apk
 -system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk
@@ -183,7 +187,7 @@
 bin/iwpriv
 etc/nfcee_access.xml
 etc/permissions/privapp-permissions-qti.xml
-etc/permissions/vendor.qti.data.factory-V2.0-java.xml
+etc/permissions/vendor.qti.data.factory-V2.1-java.xml
 etc/sysconfig/qti_whitelist.xml
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
@@ -303,6 +307,7 @@ system_ext/etc/permissions/com.android.settings.xml
 system_ext/etc/permissions/com.android.storagemanager.xml
 system_ext/etc/permissions/com.android.systemui.xml
 system_ext/etc/permissions/com.nxp.nfc.nq.xml
+system_ext/etc/permissions/com.oneplus.camera.xml
 system_ext/etc/permissions/com.oneplus.software.overseas.xml
 system_ext/etc/permissions/com.oneplus.software.xml
 system_ext/etc/permissions/com.qti.dpmframework.xml
@@ -349,6 +354,7 @@ system_ext/etc/qvr/cfg/415/0/65536/mtplahaina.txt
 system_ext/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml
 system_ext/etc/qvr/qvr_hid_device_list.txt
 system_ext/etc/qvr/qvrservice_config.txt
+system_ext/etc/scroll_opt.xml
 system_ext/etc/seccomp_policy/perfservice.policy
 system_ext/etc/seccomp_policy/qvr@2.0.policy
 system_ext/etc/seccomp_policy/wfdservice.policy
@@ -444,8 +450,6 @@ system_ext/lib/liboissrtest_jni.so
 system_ext/lib/libop_os_debug.so
 system_ext/lib/libopdiagnose.so
 system_ext/lib/libopdiagnoseservice.so
-system_ext/lib/libopf.so
-system_ext/lib/libozoaudiodecoder.so
 system_ext/lib/libozoaudioutils.so
 system_ext/lib/libqcc.so
 system_ext/lib/libqcc_file_agent_sys.so
@@ -734,8 +738,6 @@ system_ext/lib64/liboissrtest_jni.so
 system_ext/lib64/libop_os_debug.so
 system_ext/lib64/libopdiagnose.so
 system_ext/lib64/libopdiagnoseservice.so
-system_ext/lib64/libopf.so
-system_ext/lib64/libozoaudiodecoder.so
 system_ext/lib64/libozoaudioutils.so
 system_ext/lib64/libqcc.so
 system_ext/lib64/libqcc_file_agent_sys.so
@@ -919,6 +921,7 @@ system_ext/lib64/vendor.qti.qspmhal@1.0.so
 system_ext/lib64/vendor.qti.voiceprint@1.0.so
 system_ext/priv-app/OPCoreService/lib/arm64/libOPDefragment_jni.so
 system_ext/priv-app/OPCoreService/lib/arm64/libOPGameVibrate_jni.so
+system_ext/priv-app/OnePlusCamera/lib/arm64/libsnpe_dsp_v66_domains_v2_skel.so
 system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so
 system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
 system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so

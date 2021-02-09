@@ -269,7 +269,7 @@ vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
 # CNE
-etc/permissions/vendor.qti.data.factory-V2.0-java.xml
+etc/permissions/vendor.qti.data.factory-V2.1-java.xml
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
 -product/framework/vendor.qti.data.factory-V1.0-java.jar
@@ -1518,6 +1518,7 @@ vendor/lib64/hw/lights.kona.so
 # Listen
 vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so
 vendor/lib/hw/android.hardware.soundtrigger@2.2-impl.so
+vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
 vendor/lib/hw/sound_trigger.primary.kona.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libgcs-calwrapper.so
@@ -1527,6 +1528,7 @@ vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libsmwrapper.so
 vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so
+vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
 vendor/lib64/hw/sound_trigger.primary.kona.so
 vendor/lib64/libgcs-calwrapper.so
 vendor/lib64/libgcs-ipc.so
@@ -2788,6 +2790,7 @@ system_ext/etc/permissions/com.android.settings.xml
 system_ext/etc/permissions/com.android.storagemanager.xml
 system_ext/etc/permissions/com.android.systemui.xml
 system_ext/etc/permissions/com.nxp.nfc.nq.xml
+system_ext/etc/permissions/com.oneplus.camera.xml
 system_ext/etc/permissions/com.oneplus.software.overseas.xml
 system_ext/etc/permissions/com.oneplus.software.xml
 system_ext/etc/permissions/com.qti.media.secureprocessor.xml
@@ -2822,6 +2825,7 @@ system_ext/etc/qvr/cfg/415/0/65536/mtplahaina.txt
 system_ext/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml
 system_ext/etc/qvr/qvrservice_config.txt
 system_ext/etc/qvr/qvr_hid_device_list.txt
+system_ext/etc/scroll_opt.xml
 system_ext/etc/seccomp_policy/perfservice.policy
 system_ext/etc/seccomp_policy/qvr@2.0.policy
 system_ext/etc/seccomp_policy/wfdservice.policy
@@ -2898,10 +2902,8 @@ system_ext/lib/libOPDefragment_jni.so
 system_ext/lib/libopdiagnose.so
 system_ext/lib/libopdiagnoseservice.so
 system_ext/lib/libOpenCL_system.so
-system_ext/lib/libopf.so
 system_ext/lib/libOPGameVibrate_jni.so
 system_ext/lib/libop_os_debug.so
-system_ext/lib/libozoaudiodecoder.so
 system_ext/lib/libozoaudioutils.so
 system_ext/lib/libqcc.so
 system_ext/lib/libqcc_file_agent_sys.so
@@ -3035,10 +3037,8 @@ system_ext/lib64/libOPDefragment_jni.so
 system_ext/lib64/libopdiagnose.so
 system_ext/lib64/libopdiagnoseservice.so
 system_ext/lib64/libOpenCL_system.so
-system_ext/lib64/libopf.so
 system_ext/lib64/libOPGameVibrate_jni.so
 system_ext/lib64/libop_os_debug.so
-system_ext/lib64/libozoaudiodecoder.so
 system_ext/lib64/libozoaudioutils.so
 system_ext/lib64/libqcc.so
 system_ext/lib64/libqcc_file_agent_sys.so
@@ -3111,7 +3111,6 @@ system_ext/lib64/vendor.qti.qspmhal@1.0.so
 -system_ext/overlay/CommonOverlay-OpNetworkStackConfigCN.apk
 -system_ext/overlay/CommonOverlay-OPSystemUI.apk
 -system_ext/overlay/CommonOverlay-OpWifiResource.apk
--system_ext/priv-app/CameraPicProcService/CameraPicProcService.apk
 -system_ext/priv-app/CarrierConfig/CarrierConfig.apk
 -system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk
 -system_ext/priv-app/daxService/daxService.apk
@@ -3124,9 +3123,13 @@ system_ext/lib64/vendor.qti.qspmhal@1.0.so
 system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
 system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
 -system_ext/priv-app/oneplus-framework-res/oneplus-framework-res.apk
+system_ext/priv-app/OnePlusCamera/lib/arm64/libsnpe_dsp_v66_domains_v2_skel.so
+-system_ext/priv-app/OnePlusCamera/OnePlusCamera.apk
 -system_ext/priv-app/OnePlusGallery/OnePlusGallery.apk
+-system_ext/priv-app/OPAccessoryFramework/OPAccessoryFramework.apk
 -system_ext/priv-app/OPAppCategoryProvider/OPAppCategoryProvider.apk
 -system_ext/priv-app/OPAppLocker/OPAppLocker.apk
+-system_ext/priv-app/OPChargingPillar/OPChargingPillar.apk
 -system_ext/priv-app/OPContacts/OPContacts.apk
 system_ext/priv-app/OPCoreService/lib/arm64/libOPDefragment_jni.so
 system_ext/priv-app/OPCoreService/lib/arm64/libOPGameVibrate_jni.so
@@ -3140,6 +3143,7 @@ system_ext/priv-app/OPCoreService/lib/arm64/libOPGameVibrate_jni.so
 -system_ext/priv-app/OPNetworkSetting/OPNetworkSetting.apk
 -system_ext/priv-app/OPOmm/OPOmm.apk
 -system_ext/priv-app/OPSystemUI/OPSystemUI.apk
+-system_ext/priv-app/OPWorkLifeBalance/OPWorkLifeBalance.apk
 -system_ext/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
 -system_ext/priv-app/QuickAccessWallet/QuickAccessWallet.apk
 -system_ext/priv-app/seccamservice/seccamservice.apk
@@ -3148,6 +3152,7 @@ system_ext/priv-app/OPCoreService/lib/arm64/libOPGameVibrate_jni.so
 -system_ext/priv-app/SetupWizard/SetupWizard.apk
 -system_ext/priv-app/StorageManager/StorageManager.apk
 -system_ext/priv-app/subsdm/subsdm.apk
+-system_ext/priv-app/TagGoogle/TagGoogle.apk
 -system_ext/priv-app/WallpaperCropper/WallpaperCropper.apk
 -vendor/app/CACertService/CACertService.apk
 -vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk
@@ -3180,7 +3185,6 @@ vendor/bin/fsync
 vendor/bin/getconf
 vendor/bin/hal_proxy_daemon
 vendor/bin/hw/capabilityconfigstoretest
-vendor/bin/hw/vendor.ozoaudio.media.c2@1.0-service
 vendor/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
 vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
@@ -3294,7 +3298,6 @@ vendor/etc/init/qmipriod.rc
 vendor/etc/init/qseecomd.rc
 vendor/etc/init/ssgtzd.rc
 vendor/etc/init/tloc_daemon.rc
-vendor/etc/init/vendor.ozoaudio.media.c2@1.0-service.rc
 vendor/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc
 vendor/etc/init/vendor.qti.adsprpc-service.rc
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
@@ -3357,7 +3360,6 @@ vendor/etc/oui/ieee_oui_C0.json
 vendor/etc/oui/ieee_oui_D0.json
 vendor/etc/oui/ieee_oui_E0.json
 vendor/etc/oui/ieee_oui_F0.json
-vendor/etc/ozosdk.license
 vendor/etc/permissions/vendor.qti.hardware.factory.xml
 vendor/etc/platform_boost/boost_cap.xml
 vendor/etc/platform_boost/boost_mode.xml
@@ -3404,8 +3406,6 @@ vendor/lib/libapsexif.so
 vendor/lib/libapsjpeg.so
 vendor/lib/libaps_frame_registration.so
 vendor/lib/libavservices_minijail.so
-vendor/lib/libav_ozodecoder.so
-vendor/lib/libav_ozoencoder.so
 vendor/lib/libbatterylistener.so
 vendor/lib/libbitmlengine.so
 vendor/lib/libboot_control_qti.so
@@ -3414,8 +3414,6 @@ vendor/lib/libcert_parse.wpa_s.so
 vendor/lib/libchilog.so
 vendor/lib/libcirrusspkrprot.so
 vendor/lib/libcodec2_hidl@1.0.so
-vendor/lib/libcodec2_soft_ozodec.so
-vendor/lib/libcodec2_soft_ozoenc.so
 vendor/lib/libcodec2_vndk.so
 vendor/lib/libcomprcapture.so
 vendor/lib/libdapparamstorage.so
@@ -3460,9 +3458,6 @@ vendor/lib/libopenvx.so
 vendor/lib/libopf.so
 vendor/lib/libopus.so
 vendor/lib/libos.so
-vendor/lib/libozoaudiodecoder.so
-vendor/lib/libozoaudioencoder.so
-vendor/lib/libozoc2store.so
 vendor/lib/libparam_vendor.so
 vendor/lib/libperfconfig.so
 vendor/lib/libperfioctl.so
@@ -3543,7 +3538,6 @@ vendor/lib/qtibus.so
 vendor/lib/qtimutex.so
 vendor/lib/soundfx/libhaptic_effect.so
 vendor/lib/soundfx/libhwdap.so
-vendor/lib/soundfx/libozoprocessing.so
 vendor/lib/soundfx/libswdap.so
 vendor/lib/unnhal-acc-hta.so
 vendor/lib/vendor.pixelworks.hardware.feature@1.0.so
@@ -3602,7 +3596,6 @@ vendor/lib64/libapsexif.so
 vendor/lib64/libapsjpeg.so
 vendor/lib64/libaps_frame_registration.so
 vendor/lib64/libavservices_minijail.so
-vendor/lib64/libav_ozoencoder.so
 vendor/lib64/libbatterylistener.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libboot_control_qti.so
@@ -3663,7 +3656,6 @@ vendor/lib64/libop-bokeh.so
 vendor/lib64/libopenvx.so
 vendor/lib64/libopf.so
 vendor/lib64/libos.so
-vendor/lib64/libozoaudioencoder.so
 vendor/lib64/libparam_vendor.so
 vendor/lib64/libperfconfig.so
 vendor/lib64/libperfioctl.so
@@ -3726,7 +3718,6 @@ vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib64/se_nq_extn_client.so
 vendor/lib64/soundfx/libhaptic_effect.so
 vendor/lib64/soundfx/libhwdap.so
-vendor/lib64/soundfx/libozoprocessing.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so

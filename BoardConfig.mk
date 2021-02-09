@@ -2,7 +2,7 @@ DEVICE_PATH := device/oneplus/OnePlus8
 BOARD_VENDOR := oneplus
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2020-11-01
+VENDOR_SECURITY_PATCH := 2021-01-01
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml

@@ -80,12 +80,10 @@ volume index from 0 to 100.
     <volume stream="AUDIO_STREAM_RING" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
                                        ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_HEADSET">
-    <!--#ifdef VENDOR_EDIT
-        dujie@MM.Audio, 2020/07/06, EU CTA certification -->
-        <point>1,-6300</point>
-        <point>20,-3500</point>
-        <point>60,-1950</point>
-        <point>100,-465</point>
+        <point>1,-6100</point>
+        <point>20,-4000</point>
+        <point>60,-1650</point>
+        <point>100,-150</point>
     </volume>
     <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_SPEAKER"
                                         ref="DEFAULT_DEVICE_CATEGORY_SPEAKER_VOLUME_CURVE"/>
